@@ -56,7 +56,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
     public RecyclerAdapter(ListItem[] items) { mItems = items; }
 
     /**
-     * Inflate the list_item.xml and return the holder
+     * Inflate the item_list.xml and return the holder
      */
     @NonNull
     @Override
@@ -65,7 +65,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
         LayoutInflater inflater = LayoutInflater.from(context);
 
         //! inflate the layout
-        View itemView = inflater.inflate(R.layout.list_item, parent, false);
+        View itemView = inflater.inflate(R.layout.item_list, parent, false);
 
         //! return a new holder instance
         //ViewHolder viewHolder = new ViewHolder(itemView);

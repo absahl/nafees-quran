@@ -7,9 +7,6 @@ import androidx.viewpager.widget.ViewPager;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 
 import com.example.demo.R;
 
@@ -211,7 +208,7 @@ public class ReciteActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_recite);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -247,141 +244,4 @@ public class ReciteActivity extends AppCompatActivity {
         preferencesEditor.putInt(Constants.SHARED_PREFS_PAGENO_KEY, current_page);
         preferencesEditor.apply();
     }
-
-    /*@Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.para_menu, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-
-        switch (item.getItemId()) {
-            case R.id.para1:
-                viewPager.setCurrentItem(imageIds.length - getResources().getInteger(R.integer.para1_pageno) );
-                break;
-
-            case R.id.para2:
-                viewPager.setCurrentItem(imageIds.length - getResources().getInteger(R.integer.para2_pageno) );
-                break;
-
-            case R.id.para3:
-                viewPager.setCurrentItem(imageIds.length - getResources().getInteger(R.integer.para3_pageno) );
-                break;
-
-            case R.id.para4:
-                viewPager.setCurrentItem(imageIds.length - getResources().getInteger(R.integer.para4_pageno) );
-                break;
-
-            case R.id.para5:
-                viewPager.setCurrentItem(imageIds.length - getResources().getInteger(R.integer.para5_pageno) );
-                break;
-
-            case R.id.para6:
-                viewPager.setCurrentItem(imageIds.length - getResources().getInteger(R.integer.para6_pageno) );
-                break;
-
-            case R.id.para7:
-                viewPager.setCurrentItem(imageIds.length - getResources().getInteger(R.integer.para7_pageno) );
-                break;
-
-            case R.id.para8:
-                viewPager.setCurrentItem(imageIds.length - getResources().getInteger(R.integer.para8_pageno) );
-                break;
-
-            case R.id.para9:
-                viewPager.setCurrentItem(imageIds.length - getResources().getInteger(R.integer.para9_pageno) );
-                break;
-
-            case R.id.para10:
-                viewPager.setCurrentItem(imageIds.length - getResources().getInteger(R.integer.para10_pageno) );
-                break;
-
-            case R.id.para11:
-                viewPager.setCurrentItem(imageIds.length - getResources().getInteger(R.integer.para11_pageno) );
-                break;
-
-            case R.id.para12:
-                viewPager.setCurrentItem(imageIds.length - getResources().getInteger(R.integer.para12_pageno) );
-                break;
-
-            case R.id.para13:
-                viewPager.setCurrentItem(imageIds.length - getResources().getInteger(R.integer.para13_pageno) );
-                break;
-
-            case R.id.para14:
-                viewPager.setCurrentItem(imageIds.length - getResources().getInteger(R.integer.para14_pageno) );
-                break;
-
-            case R.id.para15:
-                viewPager.setCurrentItem(imageIds.length - getResources().getInteger(R.integer.para15_pageno) );
-                break;
-
-            case R.id.para16:
-                viewPager.setCurrentItem(imageIds.length - getResources().getInteger(R.integer.para16_pageno) );
-                break;
-
-            case R.id.para17:
-                viewPager.setCurrentItem(imageIds.length - getResources().getInteger(R.integer.para17_pageno) );
-                break;
-
-            case R.id.para18:
-                viewPager.setCurrentItem(imageIds.length - getResources().getInteger(R.integer.para18_pageno) );
-                break;
-
-            case R.id.para19:
-                viewPager.setCurrentItem(imageIds.length - getResources().getInteger(R.integer.para19_pageno) );
-                break;
-
-            case R.id.para20:
-                viewPager.setCurrentItem(imageIds.length - getResources().getInteger(R.integer.para20_pageno) );
-                break;
-
-            case R.id.para21:
-                viewPager.setCurrentItem(imageIds.length - getResources().getInteger(R.integer.para21_pageno) );
-                break;
-
-            case R.id.para22:
-                viewPager.setCurrentItem(imageIds.length - getResources().getInteger(R.integer.para22_pageno) );
-                break;
-
-            case R.id.para23:
-                viewPager.setCurrentItem(imageIds.length - getResources().getInteger(R.integer.para23_pageno) );
-                break;
-
-            case R.id.para24:
-                viewPager.setCurrentItem(imageIds.length - getResources().getInteger(R.integer.para24_pageno) );
-                break;
-
-            case R.id.para25:
-                viewPager.setCurrentItem(imageIds.length - getResources().getInteger(R.integer.para25_pageno) );
-                break;
-
-            case R.id.para26:
-                viewPager.setCurrentItem(imageIds.length - getResources().getInteger(R.integer.para26_pageno) );
-                break;
-
-            case R.id.para27:
-                viewPager.setCurrentItem(imageIds.length - getResources().getInteger(R.integer.para27_pageno) );
-                break;
-
-            case R.id.para28:
-                viewPager.setCurrentItem(imageIds.length - getResources().getInteger(R.integer.para28_pageno) );
-                break;
-
-            case R.id.para29:
-                viewPager.setCurrentItem(imageIds.length - getResources().getInteger(R.integer.para29_pageno) );
-                break;
-
-            case R.id.para30:
-                viewPager.setCurrentItem(imageIds.length - getResources().getInteger(R.integer.para30_pageno) );
-                break;
-
-            default:
-                throw new IllegalStateException("Unexpected value: " + item.getItemId());
-        }
-        return super.onOptionsItemSelected(item);
-    }*/
 }
