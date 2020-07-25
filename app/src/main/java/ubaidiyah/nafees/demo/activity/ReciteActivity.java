@@ -227,15 +227,6 @@ public class ReciteActivity extends AppCompatActivity {
         imageAdapter = new ImageAdapter(this, imageIds);
         viewPager.setAdapter(imageAdapter);
 
-        /*if (mPageNo == 0) //! load the first page
-            viewPager.setCurrentItem(imageAdapter.getCount() - 1);
-
-        else if (mPageNo > 0) //! load the stored page in case of resume
-            viewPager.setCurrentItem(mPageNo - 1);
-
-        else //! backward mapping in case of para/sura selection
-            viewPager.setCurrentItem(mPageNo - 1);*/
-
         if(mPageNo > -1) //! load the stored page in case of resume
             viewPager.setCurrentItem(mPageNo);
 
@@ -257,7 +248,7 @@ public class ReciteActivity extends AppCompatActivity {
         preferencesEditor.apply();
     }
 
-    @Override
+    /*@Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.para_menu, menu);
@@ -392,5 +383,5 @@ public class ReciteActivity extends AppCompatActivity {
                 throw new IllegalStateException("Unexpected value: " + item.getItemId());
         }
         return super.onOptionsItemSelected(item);
-    }
+    }*/
 }
